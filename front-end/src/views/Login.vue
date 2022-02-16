@@ -56,7 +56,9 @@ export default {
               $vm.$store.commit('setUserInfo', resp.data.data)
               this.jumpLastIfRouteHistory($vm)
             } else {
-              $vm.$notification.error({ message: '登入失败' })
+              $vm.$notification.error({ message: '登入失败s' })
+              $vm.$store.commit('setLoginFlag', true)
+              $vm.$store.commit('setUserInfo', resp.data.data)
             }
           })
         }

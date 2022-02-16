@@ -12,18 +12,18 @@ spring:
     activate:
       on-profile: "common"
   application:
-    name: nblog
+    name: klbc
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: root
-    url: jdbc:mysql://127.0.0.1:3306/nblog?useSSL=false&serverTimezone=UTC
+    password:
+    url: jdbc:mysql://127.0.0.1:3306/nblog?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
   servlet:
     multipart:
       max-file-size: 2MB
       max-request-size: 2MB
 server:
-  port: 8095
+  port: 8096
   servlet:
     context-path: /api
 
@@ -33,6 +33,11 @@ spring:
   config:
     activate:
       on-profile: dev
+  mvc:
+    static-path-pattern: /resource/**
+  web:
+    resources:
+      static-locations: file:D://noodbImg/
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -41,7 +46,8 @@ logging:
     com.noodb.blog.mapper: info
 article:
   imagePath:
-    /Users/noodzhan/IdeaProjects/noodb/back-end/build/
+#    /Users/noodzhan/IdeaProjects/noodb/back-end/build/
+    /noodbImg/
 
 
 # 生产配置
