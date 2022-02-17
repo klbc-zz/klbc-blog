@@ -1,5 +1,7 @@
 package com.klbc.blog.config;
 
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+
 /**
  * security 配置类
  *

@@ -22,7 +22,7 @@ module.exports = {
    */
   chainWebpack: config => {
     config.plugin('html').tap(arg => {
-      arg[0].title = 'noodb'
+      arg[0].title = 'klbc-blog'
       return arg
     })
   },

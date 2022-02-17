@@ -4,19 +4,22 @@
       <NoodbHeader :is-show-search="isPCComponent" @headSearch="onHeadSearch"></NoodbHeader>
       <!--      <a-divider style="top: 64px;position: fixed;z-index: 1"></a-divider>-->
       <a-layout class="noodb-container">
+
         <a-layout-sider breakpoint="lg"
                         collapsed-width="0"
                         :trigger=null theme="light" @breakpoint="breakpoint" v-show="isPCComponent">
-          <slot name="side">侧边区</slot>
+          <slot name="side"></slot>
         </a-layout-sider>
         <a-layout-content :class="{'phone-content':!isPCComponent}" class="noodb-content">
           <slot name="content">内容区</slot>
         </a-layout-content>
       </a-layout>
       <a-layout-footer>
-        <span>版权所有@ www.noodb.com &&& 赣ICP备2021005048号-1</span>
+        <span>www.klbc.xyz</span>
       </a-layout-footer>
+
     </a-layout>
+
   </div>
 </template>
 
@@ -72,23 +75,32 @@ export default {
 }
 
 .phone-content {
+
   margin-left: 0px !important;
 }
 
 .noodb-layout .ant-layout-content {
   background: white;
   padding: 0 2em;
-  margin-left: 200px;
+  margin-left: 0;
+
 }
+/*.noodb-layout .ant-layout-content{*/
+/*  margin-left: 100px;*/
+/*  margin-right: 100px;*/
+/*}*/
+
 
 @media screen and (min-width: 960px) {
   .noodb-content {
-    padding: 0 10% !important;
+    padding: 0 15% !important;
   }
 }
 
 .noodb-layout .ant-layout-footer {
   text-align: center;
+  flex: 0 0 auto;
+  z-index: 9;
 }
 
 >>> .ant-divider-horizontal {

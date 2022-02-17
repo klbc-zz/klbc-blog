@@ -1,7 +1,7 @@
 <template>
   <div class="noodb-layout">
     <a-layout-header class="noodb-header">
-      <img src="../../asserts/img/logo.png" height="70%" @click="clickLogo">
+      <img src="../../asserts/img/img_1.png" height="70%" @click="clickLogo">
 
       <a-input-search style="width: 200px;margin-left: auto" v-show="isShowSearch" @search="onSearch"></a-input-search>
 
@@ -11,7 +11,7 @@
           <a-menu-item><a href="javascript:void(0)" @click="clickWriteArticle">写文章</a></a-menu-item>
         </a-menu>
       </a-dropdown>
-      <a href="https://github.com/noodzhan/noodb-blog" class="github-link">
+      <a href="https://github.com/klbc-zz/klbc-blog" class="github-link">
         <svg style="justify-content: center" height="20" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20"
              data-view-component="true"
              class="octicon octicon-mark-github v-align-middle">
