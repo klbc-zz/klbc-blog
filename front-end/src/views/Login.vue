@@ -24,7 +24,8 @@
           重置
         </a-button>
         <a-button type="primary" html-type="submit" @click="onSubmit"
-                  :disabled="formObj.username === '' || formObj.password === ''">
+                  :disabled="formObj.username === '' || formObj.password === ''"
+        >
           登录
         </a-button>
       </a-form-item>

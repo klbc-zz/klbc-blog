@@ -58,4 +58,4 @@ spring:
       on-profile: prod
 article:
   imagePath:
-    /home/ubuntu/nblog/article-images/
+    /home/web/klbc-blog/article-images/
