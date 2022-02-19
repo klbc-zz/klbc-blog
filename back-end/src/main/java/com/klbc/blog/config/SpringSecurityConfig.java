@@ -44,8 +44,10 @@ import java.util.List;
   protected void configure(HttpSecurity http) throws Exception {
       //后台关闭csrf校验 不然post请求会抱403
       http.csrf().disable();
-    http.authorizeRequests().antMatchers("/api/blog/edit/*").authenticated();
+    //http.authorizeRequests().antMatchers("/api/blog/edit/*").authenticated();
   }
+
+
 
 /* 用于测试
     public static void main(String[] args) {

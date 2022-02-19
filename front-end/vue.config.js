@@ -3,6 +3,7 @@ module.exports = {
     port: 8080,
     proxy: {
       '/api': {
+        // target: 'http://localhost:8096/api',
         target: 'http://localhost:8096/api',
         changeOrigin: true,
         ws: true,
@@ -13,6 +14,7 @@ module.exports = {
     },
     disableHostCheck: true
   },
+
   configureWebpack: {
     devtool: 'source-map'
   },

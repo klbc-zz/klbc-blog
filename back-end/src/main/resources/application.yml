@@ -17,6 +17,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password:
+#    password: 123456
     url: jdbc:mysql://127.0.0.1:3306/nblog?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
   servlet:
     multipart:
@@ -35,9 +36,14 @@ spring:
       on-profile: dev
   mvc:
     static-path-pattern: /resource/**
+    view:
+      suffix: /
+      prefix: .html
+
   web:
     resources:
       static-locations: file:D://noodbImg/
+#      static-locations: /home/web/klbc-blog/article-images/ 因为打不了生产包所以用开发包试试
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -46,8 +52,9 @@ logging:
     com.noodb.blog.mapper: info
 article:
   imagePath:
-#    /Users/noodzhan/IdeaProjects/noodb/back-end/build/
+
     /noodbImg/
+#    /home/web/klbc-blog/article-images/
 
 
 # 生产配置
