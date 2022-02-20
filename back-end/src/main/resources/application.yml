@@ -43,7 +43,8 @@ spring:
   web:
     resources:
       static-locations: file:D://noodbImg/
-#      static-locations: /home/web/klbc-blog/article-images/ 因为打不了生产包所以用开发包试试
+#      static-locations: /home/web/klbc-blog/article-images/
+      #因为打不了生产包所以用开发包试试
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
