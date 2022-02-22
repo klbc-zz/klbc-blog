@@ -78,8 +78,8 @@ public class JwtUtils {
   public static void main(String[] args) {
     JwtUtils jwtUtils = new JwtUtils();
     User user = new User();
-    user.setUsername("noodb");
-    user.setPassword("noodb");
+    user.setUsername("klbc");
+    user.setPassword("123");
     String jwt = jwtUtils.genToken(user);
     User payLoad = jwtUtils.getSubject(User.class, jwt);
     System.out.println(payLoad);

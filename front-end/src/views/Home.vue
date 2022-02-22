@@ -1,21 +1,7 @@
 <template>
   <NoodbLayout @headSearch="onHeadSearch">
     <template v-slot:side>
-<!--      <div>-->
-<!--        <a-card title="推荐文档" :bordered="false">-->
-<!--          <div v-for="(item,index) in recommendBooks" :key="index" class="recommend-book">-->
-<!--            <a>{{ item.name }}</a>-->
-<!--          </div>-->
-<!--        </a-card>-->
-<!--        <a-card title="推荐书籍" :bordered="false">-->
-<!--          <div v-for="(item,index) in recommendBooks" :key="index" class="recommend-book">-->
-<!--            <a>{{ item.name }}</a>-->
-<!--          </div>-->
-<!--        </a-card>-->
-<!--        <a-card title="捐赠支持" :bordered="false">-->
-<!--          <img src="../asserts/img/payme.jpeg" width="100%" style="text-align: center">-->
-<!--        </a-card>-->
-<!--      </div>-->
+
     </template>
     <template v-slot:content>
       <div class="home-content">
